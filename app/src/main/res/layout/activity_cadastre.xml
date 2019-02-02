@@ -15,9 +15,10 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:src="@drawable/icon_dfood"/>
 
         <TextView
@@ -27,7 +28,7 @@
             android:text="Realize seu Cadastro:"
             android:gravity="start|center"
             android:textSize="24sp"
-            android:fontFamily="sans-serif"
+            android:fontFamily="casual"
             android:textColor="@android:color/tertiary_text_dark"
             android:textStyle="bold"/>
 
@@ -70,9 +71,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:src=""
+                android:src="@drawable/ic_email_grey_500_36dp"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"/>
 
@@ -85,7 +86,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
+        <!-- LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -93,10 +94,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:src="@drawable/icons8-marcador-de-mapa-500_36dp"
+                android:src="@drawable/ic_map_grey_500_36dp"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
 
             <EditText
                 android:inputType="text"
@@ -105,7 +107,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="6"/>
 
-        </LinearLayout>
+        </LinearLayout -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,7 +117,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:src=""
+                android:src="@drawable/ic_phone_grey_500_36dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -142,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_lock_grey_500_36dp" />
+                android:src="@drawable/ic_lock_outline_grey_500_36dp" />
 
             <EditText
                 android:inputType="textPassword"
@@ -179,18 +181,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:text="Confirmar"
                 android:textStyle="normal"
                 android:textSize="20sp"
-                android:background="#2a2"
+                android:padding="12dp"
+                android:background="@drawable/layout_button_confirm"
                 android:textColor="@android:color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="120dp"
-                android:layout_gravity="center"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
