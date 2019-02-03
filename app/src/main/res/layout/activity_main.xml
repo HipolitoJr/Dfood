@@ -77,6 +77,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btn_login"
             android:text="Entrar"
             android:background="@drawable/layout_button_cadastre_se"
             android:textColor="@android:color/white"
@@ -87,6 +88,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/btn_cadastre_se"
             android:layout_margin="8dp"
             android:textSize="18sp"
             android:text="Cadastre-se"
