@@ -68,6 +68,7 @@
                     android:background="#228B22"
                     android:text="Confirmar"
                     android:textColor="#FFFFFF"
+                    android:onClick="testeConfimaPedido"
                     />
                <TextView
                    android:layout_width="0dp"

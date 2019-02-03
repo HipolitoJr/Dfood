@@ -1,9 +1,11 @@
 package com.example.hipolito.dfood;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.example.hipolito.dfood.adapters.ItemPedidoAdapter;
 import com.example.hipolito.dfood.models.Item;
@@ -75,6 +77,13 @@ public class PedidoListActivity extends AppCompatActivity {
 
         linearLayoutManager.scrollToPosition(0);
         rcItens.setLayoutManager(linearLayoutManager);
+
+    }
+
+    public void testeConfimaPedido(View view) {
+
+        Intent intent = new Intent(this, ConfirmacaoPedidoActivity.class);
+        startActivity(intent);
 
     }
 }
