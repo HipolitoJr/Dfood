@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_filter_purple_900_24dp"/>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="12dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtNomeRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Novo Point da Picanha"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgLocalizacao"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_on_black_18dp"/>
+
+                <TextView
+                    android:id="@+id/txtLocalizacao"
+                    android:layout_weight="13"
+                    android:layout_width="0dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Zona Sul"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_circle_light_green_a700_18dp"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Aberto"/>
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:src="@drawable/star"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/star2"
+                    android:src="@drawable/star"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/star3"
+                    android:src="@drawable/star"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/star4"
+                    android:src="@drawable/star"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/star5"
+                    android:src="@drawable/star"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorBlack"/>
+
+</LinearLayout>
