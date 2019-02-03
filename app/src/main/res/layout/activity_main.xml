@@ -84,7 +84,8 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="testeListaItens"/>
 
         <TextView
             android:layout_margin="8dp"
