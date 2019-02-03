@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Dfood</string>
     <string name="name_cadastre_se"><u>Cadastre-se</u></string>
+
+    <string name="forma_pagamento_promt">Cartão de crédito</string>
+    <string-array name="formas">
+        <item>Cartão de crédito</item>
+        <item>Dinheiro</item>
+        <item>Cartão de débito</item>
+
+    </string-array>
 </resources>
+
