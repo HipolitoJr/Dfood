@@ -78,6 +78,7 @@ public class RestauranteRVAdapter extends RecyclerView.Adapter<RestauranteRVAdap
             @Override
             public void onClick(View v) {
                 Intent intent =  new Intent(mContext.getApplicationContext(), PedidoListActivity.class);
+                intent.putExtra("nomeRestaurante", restaurante.getNome());
                 mContext.startActivity(intent);
             }
         });

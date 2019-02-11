@@ -24,7 +24,6 @@ public class PedidoListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedido_list);
-
         bindViews();
         setupViews();
 
@@ -36,8 +35,21 @@ public class PedidoListActivity extends AppCompatActivity {
 
     public void setupViews(){
         itens = new ArrayList<Item>();
+        setTitulo();
         povoaLista();
         atualizaLista();
+    }
+
+    private void setTitulo() {
+        Intent intent = getIntent();
+        String nomeRestaurante = intent.getStringExtra("nomeRestaurante");
+
+        if (nomeRestaurante != null && !nomeRestaurante.isEmpty()){
+            this.setTitle(nomeRestaurante);
+        }else{
+            this.setTitle("Cardápio");
+        }
+
     }
 
     public List<Item> povoaLista(){

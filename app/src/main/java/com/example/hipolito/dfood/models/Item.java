@@ -21,7 +21,7 @@ public class Item {
     }
 
     public String getPreco() {
-        return preco;
+        return preco.replace(".", ",");
     }
 
     public void setTitulo(String titulo) {
