@@ -38,13 +38,16 @@ public class HomeActivity extends AppCompatActivity {
                                 break;
 
                             case R.id.navigation_pedidos:
-
                                 getSupportActionBar().setTitle("Meus Pedidos");
                                 Fragment pedidosFragment = PedidoFragment.newInstance();
                                 openFragment(pedidosFragment);
                                 break;
 
                             case R.id.navigation_conta:
+                                getSupportActionBar().setTitle("Minha conta");
+                                SettingsFragment settingsFragment = SettingsFragment.newInstance();
+                                openFragment(settingsFragment);
+                                break;
 
                         }
                         return true;                    }

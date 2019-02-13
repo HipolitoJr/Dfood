@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void testeListaItens(View view) {
-
         Intent intent =  new Intent(this,HomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
 

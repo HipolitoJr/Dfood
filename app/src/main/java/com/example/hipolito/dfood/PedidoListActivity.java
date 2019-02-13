@@ -1,6 +1,7 @@
 package com.example.hipolito.dfood;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,7 +19,7 @@ public class PedidoListActivity extends AppCompatActivity {
     private RecyclerView rcItens;
     private ItemPedidoAdapter itemPedidoAdapter;
     private List<Item> itens;
-
+    private FloatingActionButton btnConfirmaPedido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,11 @@ public class PedidoListActivity extends AppCompatActivity {
 
     public void bindViews(){
         rcItens = findViewById(R.id.rc_itens_pedido);
+        btnConfirmaPedido = findViewById(R.id.btn_confirma_pedido);
+
+        btnConfirmaPedido.setOnClickListener(onclick -> {
+            testeConfimaPedido();
+        });
     }
 
     public void setupViews(){
@@ -92,8 +98,7 @@ public class PedidoListActivity extends AppCompatActivity {
 
     }
 
-    public void testeConfimaPedido(View view) {
-
+    public void testeConfimaPedido() {
         Intent intent = new Intent(this, ConfirmacaoPedidoActivity.class);
         startActivity(intent);
 
